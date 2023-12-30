@@ -1,4 +1,12 @@
+body{
+
+
+  background-color: blanchedalmond;
+}
+
 .outer {
+  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,6 +15,8 @@
 
 .child {
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Optional: Add styles for better appearance */
