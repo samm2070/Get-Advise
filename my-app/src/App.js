@@ -1,9 +1,11 @@
 import { useState } from "react";
 
+import './App.css';
+
 function App() {
 
 
-  const [advice, setAdvice] = useState("Hii");
+  const [advice, setAdvice] = useState("Click the Button to fetch Advice");
 
 
   async function getAdvice() {
@@ -20,14 +22,16 @@ function App() {
 
 
   return (
-    <div>
+    <div className="outer">
 
-      <h1>
+      <div className="child">
+        <h1 className="advice">
+          {advice}
+        </h1>
 
-        {advice}
-      </h1>
+        <button className="click" onClick={getAdvice} >Get Advice</button>
+      </div>
 
-      <button onClick={getAdvice} >Get Advice</button>
     </div>
   );
 }
