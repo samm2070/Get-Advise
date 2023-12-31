@@ -30,6 +30,7 @@ function App() {
         </h1>
 
         <button className="click" onClick={getAdvice} >Get Advice</button>
+        <h2>Have Sabr!</h2>
       </div>
 
     </div>
